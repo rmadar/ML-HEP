@@ -1,5 +1,4 @@
 numpy
 pandas
 matplotlib
-root_numpy
 sklearn
