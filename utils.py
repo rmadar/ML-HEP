@@ -12,8 +12,8 @@ def compare_4top_ttV_distributions(data_4top,data_ttV,variables,myfigsize=(20,20
             break
         i=i+1
         plt.subplot(3,3,i)
-        plt.hist(data_4top[var], bins=100, histtype='step', linewidth=2.5,label='tttt')
-        plt.hist(data_ttV[var] , bins=100, histtype='step', linewidth=2.5,label='ttV' )
+        plt.hist(data_4top[var], bins=100, histtype='step', density=True, linewidth=2.5,label='tttt')
+        plt.hist(data_ttV[var] , bins=100, histtype='step', density=True, linewidth=2.5,label='ttV' )
         plt.legend()
         plt.xlabel(var)
     return
