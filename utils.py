@@ -4,7 +4,19 @@ import matplotlib.pyplot as     plt
 import matplotlib        as     mpl
 from   sklearn.metrics   import roc_curve
 
-def compare_4top_ttV_distributions(data_4top,data_ttV,variables,myfigsize=(20,20)):
+def compare_4top_ttV_distributions(data_4top,data_ttV,variables,selection='',myfigsize=(20,20)):
+    """
+    Plot normalized distributions for two processes, for a given selection (9 variables max)
+    data_4top: dataframe for 4top
+    data_ttV : dataframe for 4top
+    variables: array of variable name (9 max)
+    selection: string of event selection
+    myfigsize: figure size in case of less than 9 variables
+    """
+    if (selection is not ''):
+        data_4top = data_4top.query(selection)
+        data_ttV  = data_ttV .query(selection)
+
     plt.figure(figsize=myfigsize)
     i=0
     for var in variables:
