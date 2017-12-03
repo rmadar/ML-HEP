@@ -1,8 +1,31 @@
+import pickle
 import numpy             as     np
 import pandas            as     pd
 import matplotlib.pyplot as     plt
 import matplotlib        as     mpl
 from   sklearn.metrics   import roc_curve
+
+
+def remove_bjets_info(my_df):
+    my_df = my_df.drop('nbjet',axis=1)
+    jet_isb_list=['jet_isb'+str(i) for i in range(0,9)]
+    my_df = my_df.drop(jet_isb_list,axis=1)
+    return my_df
+
+
+def save_model_in_file(model,filename):
+    file = open(filename, 'wb')
+    pickle.dump(model,file)
+    file.close()
+    return
+
+
+def open_model_from_file(filename):
+    file = open(filename, 'rb')
+    model = pickle.load(file)
+    file.close()
+    return model
+
 
 def compare_4top_ttV_distributions(data_4top,data_ttV,variables,selection='',myfigsize=(20,20)):
     """
@@ -109,7 +132,7 @@ def plot_prediction_ndim(regressor,testX,testY,trainX,trainY,nvar=10):
     return
 
 
-def plot_roc_curves(Xsig, Xbkg, variables, regressors):
+def plot_roc_curves(Xsig, Xbkg, variables, regressors, selections=''):
     """
     Xsig      : dataframe object containing signal events
     Xbkg      : dataframe object containing background events
@@ -122,7 +145,8 @@ def plot_roc_curves(Xsig, Xbkg, variables, regressors):
     bkg_labelled = Xbkg
     bkg_labelled['isSig'] = False
     X = pd.concat( [sig_labelled,bkg_labelled] )
-
+    X = X.query(selections)
+    
     # Produce the plots
     plt.figure(figsize=(10,8))
     for var in variables:
