@@ -2,7 +2,7 @@
 
 This repository gives few examples of data analysis in the context of particle physics, more specifically on four top quarks production contaminated by top quark pairs produced in association with an electro-weak vector boson. If you have no idea of what I am talking about, [check this out](http://romain-madar.com/research.html)! 
 
-All examples of this page use simulated LHC collisions and can be interactively executed simply via a web browser. Do want to try? Just click on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/rmadar/ML-HEP/master?filepath=examples)
+All examples of this page use simulated LHC collisions and can be interactively executed simply via a web browser. Do you want to try? Just click on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/rmadar/ML-HEP/master?filepath=examples)
 
 ## 1. Data inspection
 
