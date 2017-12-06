@@ -1,6 +1,6 @@
 # Machine learning in particle physics
 
-All examples can be run via a web browser using Binder. Do want to try? Just click on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/rmadar/ML-HEP/master?filepath=examples)
+All examples can be interactively executed via a web browser using Binder. Do want to try? Just click on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/rmadar/ML-HEP/master?filepath=examples)
 
 ## Data inspection
 
