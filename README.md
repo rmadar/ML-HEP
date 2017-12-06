@@ -1,6 +1,6 @@
 # Machine learning in particle physics
 
-This repository gives few example of data analysis in the context of particle physics, more specifically on four top quarks production contaminated by top quark pairs produced in association with an electro-weak vector boson. If you have no idea of I am talking about, [check this out](http://romain-madar.com/research.html)! 
+This repository gives few example of data analysis in the context of particle physics, more specifically on four top quarks production contaminated by top quark pairs produced in association with an electro-weak vector boson. If you have no idea of what I am talking about, [check this out](http://romain-madar.com/research.html)! 
 
 All examples of this page can be interactively executed simply via a web browser using [MyBinder](https://mybinder.org/). Do want to try? Just click on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/rmadar/ML-HEP/master?filepath=examples)
 
