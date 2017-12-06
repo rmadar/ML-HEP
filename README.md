@@ -15,4 +15,4 @@ This [notebook](https://github.com/rmadar/ML-HEP/blob/master/examples/2-Regressi
 
 ## 3. Signal and background classification
 
-This [notebook](https://github.com/rmadar/ML-HEP/blob/master/examples/3-Classification.ipynb) illustrates how event categorisation (signal v.s. backgroun) can be performed using machine learning algorithms. The datasets is prepared and three algorithms are compared. The classifier distributions are displayed and the ROC curves are compared classification based on a single variable). The power of the classification can be easily assessed for different selections.
+This [notebook](https://github.com/rmadar/ML-HEP/blob/master/examples/3-Classification.ipynb) illustrates how event categorisation (signal v.s. background) can be performed using machine learning algorithms. The datasets is prepared and three algorithms are compared. The classifier distributions are displayed and the ROC curves are compared classification based on a single variable). The power of the classification can be easily assessed for different selections.
